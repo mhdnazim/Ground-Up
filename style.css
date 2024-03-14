@@ -167,7 +167,7 @@ a:hover {
 /* Title  */
 
 #title {
-    background-image: url(/images/home_bg2.png);
+    background-image: url(images/home_bg2.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: bottom;
@@ -221,7 +221,7 @@ a:hover {
 }
 
 .content .title a {
-    background-image: url(/images/arrow_right.svg);
+    background-image: url(images/arrow_right.svg);
     background-repeat: no-repeat;
     background-position: right 24px center;
     font-family: Gilroy SemiBold;
@@ -366,7 +366,7 @@ a:hover {
 }
 
 #trainings .training-details a {
-    background-image: url(/images/chevron-right.svg);
+    background-image: url(images/chevron-right.svg);
     background-repeat: no-repeat;
     background-position: right 0 center;
     padding-right: 30px;
@@ -418,7 +418,7 @@ a:hover {
 }
 
 #about div a {
-    background-image: url(/images/arrow_right.svg);
+    background-image: url(images/arrow_right.svg);
     background-repeat: no-repeat;
     background-position: right 24px center;
     font-family: Gilroy SemiBold;
@@ -510,7 +510,7 @@ a:hover {
 }
 
 #contact button {
-    background-image: url(/images/arrow_right.svg);
+    background-image: url(images/arrow_right.svg);
     background-repeat: no-repeat;
     background-position: right 24px center;
     font-family: Gilroy SemiBold;
@@ -635,7 +635,7 @@ footer div p {
 }
 
 #about-title {
-    background-image: url(/images/about-bg.png);
+    background-image: url(images/about-bg.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: bottom;
