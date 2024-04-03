@@ -249,7 +249,8 @@ a:hover {
 }
 
 #services .container div {
-    box-shadow: rgba(134, 134, 134, 0.25) 0px 8px 24px;
+    /* box-shadow: rgba(134, 134, 134, 0.25) 0px 8px 24px; */
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 12px 0px;
     border-radius: 10px;
     padding: 32px 0 31px 33px;
 }
@@ -828,7 +829,7 @@ footer div p {
     text-decoration: none;
 }
 
-.contactus .cont-details div:not(.icon){
+.contactus .cont-details div:not(.icon) {
     display: flex;
     align-items: center;
 }
