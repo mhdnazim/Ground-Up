@@ -20,6 +20,11 @@
     src: url(./fonts/gilroy/Gilroy-SemiBold.ttf);
 }
 
+@font-face {
+    font-family: Roboto Regular;
+    src: url(./fonts/Roboto/Roboto-Regular.ttf);
+}
+
 /* universal selector  */
 
 * {
@@ -54,35 +59,38 @@
     align-items: center;
 }
 
-nav {
+header {
     background: #FFFFFF;
     width: 100%;
 }
 
-nav .header-logo img {
+header .header-logo img {
     width: 100%;
 }
 
-nav ul {
+header ul {
+    font-family: Gilroy Medium;
     float: right;
-    margin-right: 20px;
 }
 
-nav ul li {
+header ul li {
     display: inline;
     text-decoration: none;
     font-size: 16px;
 }
 
-nav ul li:not(:nth-child(4)) {
+header ul li {
     margin-right: 82px;
 }
 
-nav ul li a {
+header ul li a {
+    font-family: Gilroy Medium;
     text-decoration: none;
     color: black;
     font-size: 16px;
+    letter-spacing: 1px;
 }
+
 
 a.active,
 a:hover {
@@ -167,7 +175,7 @@ a:hover {
 /* Title  */
 
 #title {
-    background-image: url(images/home_bg2.png);
+    background-image: url(./images/home_bg2.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: bottom;
@@ -208,20 +216,13 @@ a:hover {
     line-height: 24px;
     font-size: 16px;
     color: #4A4949;
-    letter-spacing: 1.5px;
-    font-weight: lighter;
-}
-
-.content .para1 {
+    letter-spacing: 1px;
     padding-top: 1px;
-}
-
-.content .para2 {
-    padding-bottom: 44px;
+    padding-bottom: 37px;
 }
 
 .content .title a {
-    background-image: url(images/arrow_right.svg);
+    background-image: url(./images/arrow_right.svg);
     background-repeat: no-repeat;
     background-position: right 24px center;
     font-family: Gilroy SemiBold;
@@ -230,6 +231,10 @@ a:hover {
     color: #FFFFFF;
     padding: 15px 53px 13px 25px;
     border-radius: 30px;
+}
+
+.content .title a:hover {
+    background-color: #F67C01;
 }
 
 /* ============================================================================= */
@@ -244,7 +249,7 @@ a:hover {
 }
 
 #services .container div {
-    box-shadow: 0 0 10px 1px rgba(207, 202, 202, 0.548);
+    box-shadow: rgba(134, 134, 134, 0.25) 0px 8px 24px;
     border-radius: 10px;
     padding: 32px 0 31px 33px;
 }
@@ -263,22 +268,29 @@ a:hover {
     padding-bottom: 13px;
     font-size: 21px;
     font-weight: lighter;
+    letter-spacing: 1px;
 }
 
 #services p {
     font-family: Gilroy Medium;
     color: #777777;
     max-width: 320px;
+    font-size: 17px;
     padding-right: 27px;
+    letter-spacing: 1px;
+    line-height: 21px;
 }
 
 /* ============================================================================= */
 
 /* trainings  */
 
-*/ #trainings {
+#trainings {
     background-color: #EFFAF6;
-    padding: 76px;
+}
+
+#trainings .container {
+    padding: 76px 0px 117px 0px;
 }
 
 #trainings .trainings-para {
@@ -316,7 +328,7 @@ a:hover {
 }
 
 #trainings .container-div {
-    width: 380px;
+    max-width: 380px;
 }
 
 #trainings .trainings-img div {
@@ -366,7 +378,7 @@ a:hover {
 }
 
 #trainings .training-details a {
-    background-image: url(images/chevron-right.svg);
+    background-image: url(./images/chevron-right.svg);
     background-repeat: no-repeat;
     background-position: right 0 center;
     padding-right: 30px;
@@ -376,6 +388,11 @@ a:hover {
     letter-spacing: 1px;
     text-decoration: none;
     color: #05A93D;
+    background-size: contain;
+}
+
+#trainings .training-details a:hover {
+    color: #F67C01;
 }
 
 /* ============================================================================= */
@@ -383,10 +400,13 @@ a:hover {
 /* about  */
 
 #about .container {
-    display: grid;
-    grid-template-columns: auto auto;
-    /* column-gap: 110px; */
-    padding: 135px 0 132px 0;
+    /* display: grid;
+    grid-template-columns: auto auto; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 110px;
+    padding: 135px 15px 132px 15px;
 }
 
 #about .about-img {
@@ -418,7 +438,7 @@ a:hover {
 }
 
 #about div a {
-    background-image: url(images/arrow_right.svg);
+    background-image: url(./images/arrow_right.svg);
     background-repeat: no-repeat;
     background-position: right 24px center;
     font-family: Gilroy SemiBold;
@@ -429,6 +449,10 @@ a:hover {
     border-radius: 30px;
 }
 
+#about div a:hover {
+    background-color: #F67C01;
+}
+
 /* ============================================================================= */
 
 /* contact  */
@@ -437,7 +461,7 @@ a:hover {
     background-color: #EFFAF6;
 }
 
-#contact .container {
+#contact .container:not(.contactus .container) {
     max-width: 944px;
     padding-top: 79px;
     padding-bottom: 97px;
@@ -504,13 +528,13 @@ a:hover {
 }
 
 #contact label {
-    font-weight: bolder;
+    font-family: Roboto Regular;
     line-height: 30px;
     color: #898989;
 }
 
 #contact button {
-    background-image: url(images/arrow_right.svg);
+    background-image: url(./images/arrow_right.svg);
     background-repeat: no-repeat;
     background-position: right 24px center;
     font-family: Gilroy SemiBold;
@@ -522,6 +546,11 @@ a:hover {
     font-size: 16px;
     outline: none;
     border: none;
+    cursor: pointer;
+}
+
+#contact button:hover {
+    background-color: #05A93D;
 }
 
 /* ============================================================================= *
@@ -569,19 +598,12 @@ footer .footer-items ul a:hover {
 }
 
 
-footer .social img:not(footer .social .fb-icon) {
-    background-color: #F67C01;
-    text-decoration: none;
-    border-radius: 50%;
-    padding: 10.52px 10.51px 11.36px 10.6px;
+footer .social img:hover,
+footer .social img:not(footer .social .fb-icon):hover {
+    transform: scale(1.5);
+    transition: 1s;
 }
 
-footer .social .fb-icon {
-    background-color: #F67C01;
-    text-decoration: none;
-    border-radius: 50%;
-    padding: 9.52px 15.51px 11.36px 13.6px
-}
 
 footer .social {
     display: flex;
@@ -590,6 +612,24 @@ footer .social {
     transition: 1s;
     column-gap: 11px;
     padding-bottom: 44.19px;
+}
+
+footer .social ul {
+    display: flex;
+    column-gap: 11px;
+}
+
+footer .social ul li:not(footer .social .fb-icon) {
+    background-color: #F67C01;
+    padding: 7.52px 10.51px 3.36px 10.6px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .social ul li .fb-icon {
+    padding: 3.52px 6.51px 3.36px 3.6px;
 }
 
 hr {
@@ -635,7 +675,7 @@ footer div p {
 }
 
 #about-title {
-    background-image: url(images/about-bg.png);
+    background-image: url(./images/about-bg.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: bottom;
@@ -656,7 +696,6 @@ footer div p {
 .service-container {
     max-width: 1200px;
     margin: 0 auto;
-
 }
 
 .service-container .cards {
@@ -667,7 +706,7 @@ footer div p {
 }
 
 #about-services .service-container .cards-item {
-    box-shadow: 0 0 10px 0.5px rgba(229, 226, 226, 0.548);
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     border-radius: 10px;
     padding: 23.85px 19.91px 25.84px 24.57px;
 }
@@ -731,5 +770,59 @@ footer div p {
     font-weight: lighter;
     color: #444444;
 }
+
+/* ============================================================================= */
+/* ============================================================================= */
+
+/* contactus.html */
+
+.contactus .container {
+    max-width: 1191px;
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    column-gap: 168px;
+    padding-top: 79px;
+    padding-bottom: 97px;
+    align-items: center;
+}
+
+.contactus h3 {
+    font-family: Gilroy Bold;
+    font-weight: lighter;
+    font-size: 25px;
+}
+
+.contactus .para p {
+    font-size: 15px;
+    color: #777777;
+    font-family: Gilroy Medium;
+    padding-top: 26px;
+    padding-bottom: 44px;
+    max-width: 352px;
+}
+
+.contactus .cont-details {
+    display: flex;
+    column-gap: 10px;
+    padding-bottom: 29px;
+}
+
+.contactus .cont-details .icon {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background-color: #f1f1f1;
+    width: 31px;
+    height: 31px;
+    border-radius: 50%;
+}
+
+.contactus .cont-details p {
+    font-size: 15px;
+    color: #777777;
+    font-family: Gilroy Medium;
+}
+
 
 /* ======================================END======================================= */

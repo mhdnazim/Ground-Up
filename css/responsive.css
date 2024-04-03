@@ -1,11 +1,33 @@
+@media only screen and (max-width: 201px) {
+    footer .footer-items ul {
+        font-size: 8px;
+        flex-direction: column;
+    }
+}
+
+@media only screen and (max-width: 201px) {
+    footer .footer-items {
+        font-size: 8px;
+    }
+
+    footer .footer-items {
+        font-size: 8px;
+    }
+
+    .content p {
+        font-size: 8px;
+    }
+}
+
+
 /* Smaller devices (Watches, 400px and down) */
 @media only screen and (max-width: 400px) {
 
     hr {
-        width: 50px;
+        width: 100px;
     }
 
-    nav {
+    header {
         position: fixed;
         top: 0;
         padding: 0 15px;
@@ -37,11 +59,11 @@
         display: block;
     }
 
-    nav ul li:not(:nth-child(4)) {
+    header ul li:not(:nth-child(4)) {
         margin-right: 0;
     }
 
-    nav ul {
+    header ul {
         position: fixed;
         width: 100%;
         height: 100vh;
@@ -52,13 +74,13 @@
         transition: all .5s;
     }
 
-    nav ul li {
+    header ul li {
         display: block;
         margin: 50px 0;
         line-height: 30px;
     }
 
-    nav ul li a {
+    header ul li a {
         font-size: 17px;
     }
 
@@ -90,13 +112,14 @@
     }
 
     .content p {
-        line-height: 16px;
+        font-size: 14px;
+        line-height: 20px;
     }
 
     #services .container {
         grid-template-columns: 1fr;
         grid-gap: 15px;
-        padding: 15px 15px
+        padding: 30px 15px
     }
 
     #services .container div {
@@ -107,9 +130,13 @@
         padding-right: 0px;
     }
 
+
+    #trainings .container {
+        padding: 40px 15px;
+    }
+
     #trainings .trainings-img {
-        display: grid;
-        grid-template-columns: 1fr;
+        flex-direction: column-reverse;
         grid-gap: 10px;
     }
 
@@ -127,14 +154,18 @@
     }
 
     #about .container {
-        display: grid;
-        grid-template-columns: 1fr;
+        flex-direction: column-reverse;
         padding: 15px;
+        row-gap: 40px;
     }
 
     #about .about-para {
         text-align: center;
         padding-top: 30px;
+    }
+
+    #about h2 {
+        padding-top: 0px;
     }
 
     #about p {
@@ -161,19 +192,23 @@
     }
 
     footer .footer-items ul {
-        column-gap: 5px;
+        column-gap: 14px;
     }
 
     footer .footer-items {
-        font-size: 10px;
+        font-size: 13px;
     }
 
     footer div p {
-        font-size: 5px;
+        font-size: 14px;
     }
 
     footer .footer-logo img {
         width: 100%;
+    }
+
+    .foot-wrapper {
+        padding: 0 15px;
     }
 
     /* aboutus.html */
@@ -201,6 +236,10 @@
         padding-top: 30px;
     }
 
+    .contactus .container {
+        grid-template-columns: 1fr;
+    }
+
 }
 
 /* ============================================================================= */
@@ -209,10 +248,10 @@
 @media only screen and (max-width: 600px) and (min-width: 399px) {
 
     hr {
-        width: 50px;
+        width: 300px;
     }
 
-    nav {
+    header {
         position: fixed;
         top: 0;
         padding: 0 15px;
@@ -239,11 +278,11 @@
         display: block;
     }
 
-    nav ul li:not(:nth-child(4)) {
+    header ul li:not(:nth-child(4)) {
         margin-right: 0;
     }
 
-    nav ul {
+    header ul {
         position: fixed;
         width: 100%;
         height: 100vh;
@@ -254,13 +293,13 @@
         transition: all .5s;
     }
 
-    nav ul li {
+    header ul li {
         display: block;
         margin: 50px 0;
         line-height: 30px;
     }
 
-    nav ul li a {
+    header ul li a {
         font-size: 20px;
     }
 
@@ -296,9 +335,20 @@
         padding: 30px 15px
     }
 
+    #services .container div {
+        padding: 15px;
+    }
+
+    #services p {
+        padding-right: 0px;
+    }
+
+    #trainings .container {
+        padding: 76px 15px;
+    }
+
     #trainings .trainings-img {
-        display: grid;
-        grid-template-columns: 1fr;
+        flex-direction: column;
         grid-gap: 10px;
     }
 
@@ -316,14 +366,18 @@
     }
 
     #about .container {
-        display: grid;
-        grid-template-columns: 1fr;
+        flex-direction: column-reverse;
         padding: 15px;
+        row-gap: 40px;
     }
 
     #about .about-para {
         text-align: center;
         padding-top: 30px;
+    }
+
+    #about h2 {
+        padding-top: 15px;
     }
 
     #about p {
@@ -375,6 +429,10 @@
         padding-right: 0px;
     }
 
+    .contactus .container {
+        grid-template-columns: 1fr;
+    }
+
 
 }
 
@@ -387,7 +445,7 @@
         max-width: 600px;
     }
 
-    nav {
+    header {
         position: fixed;
         top: 0;
         padding: 0 15px;
@@ -422,11 +480,11 @@
         display: block;
     }
 
-    nav ul li:not(:nth-child(4)) {
+    header ul li:not(:nth-child(4)) {
         margin-right: 0;
     }
 
-    nav ul {
+    header ul {
         position: fixed;
         width: 75%;
         height: 100vh;
@@ -437,13 +495,13 @@
         transition: all .5s;
     }
 
-    nav ul li {
+    header ul li {
         display: block;
         margin: 50px 0;
         line-height: 30px;
     }
 
-    nav ul li a {
+    header ul li a {
         font-size: 20px;
     }
 
@@ -488,8 +546,21 @@
         padding: 30px 15px
     }
 
+    #trainings .container {
+        padding: 40px 15px;
+    }
+
+    #trainings .container-div {
+        max-width: 768px;
+    }
+
+    #trainings .img-div {
+        max-height: 413px;
+    }
+
     #trainings .trainings-img {
         grid-gap: 10px;
+        flex-direction: column;
     }
 
     #trainings .trainings-img .training-details {
@@ -498,8 +569,10 @@
     }
 
     #about .container {
-        display: grid;
-        grid-template-columns: 1fr;
+        /* display: grid;
+        grid-template-columns: 1fr; */
+        flex-direction: column-reverse;
+        row-gap: 40px;
         padding: 15px;
     }
 
@@ -528,13 +601,17 @@
     .service-container p:not(#about-services .service-container .cards-item p) {
         padding-right: 0px;
     }
+
+    .contactus .container {
+        grid-template-columns: 1fr;
+    }
 }
 
 /* ============================================================================= */
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media screen and (max-width:991px) and (min-width: 768px) {
-    nav {
+    header {
         position: fixed;
         top: 0;
         padding: 0 15px;
@@ -561,11 +638,11 @@
         display: block;
     }
 
-    nav ul li:not(:nth-child(4)) {
+    header ul li:not(:nth-child(4)) {
         margin-right: 0;
     }
 
-    nav ul {
+    header ul {
         position: fixed;
         width: 75%;
         height: 100vh;
@@ -576,13 +653,13 @@
         transition: all .5s;
     }
 
-    nav ul li {
+    header ul li {
         display: block;
         margin: 50px 0;
         line-height: 30px;
     }
 
-    nav ul li a {
+    header ul li a {
         font-size: 20px;
     }
 
@@ -617,6 +694,7 @@
 
     #about .container {
         padding: 15px;
+        column-gap: 40px;
     }
 
     #services .container div {
@@ -631,6 +709,10 @@
         padding-right: 0;
         font-size: 12px;
     }
+
+    .contactus .container {
+        grid-template-columns: 1fr;
+    }
 }
 
 /* ============================================================================= */
@@ -640,6 +722,14 @@
 
     hr {
         max-width: 992px;
+    }
+
+    header .header {
+        padding: 0 15px;
+    }
+
+    #trainings .container {
+        padding: 76px 0px 117px 0px;
     }
 
 }
