@@ -824,5 +824,14 @@ footer div p {
     font-family: Gilroy Medium;
 }
 
+.contactus .cont-details .link {
+    text-decoration: none;
+}
+
+.contactus .cont-details div:not(.icon){
+    display: flex;
+    align-items: center;
+}
+
 
 /* ======================================END======================================= */
