@@ -4,6 +4,10 @@
         flex-direction: column;
     }
 
+    hr {
+        width: 100px !important;
+    }
+
     .content h1,
     .content h1 span {
         font-size: 30px !important;
@@ -36,7 +40,7 @@
 @media only screen and (max-width: 400px) {
 
     hr {
-        width: 100px;
+        width: 240px;
     }
 
     header {
@@ -732,7 +736,7 @@
 /* ============================================================================= */
 
 /* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 992px) and (max-width:1199px) {
 
     hr {
         max-width: 992px;
@@ -744,6 +748,10 @@
 
     #trainings .container {
         padding: 76px 0px 117px 0px;
+    }
+
+    .logo {
+        padding: 0px 15px;
     }
 
 }
